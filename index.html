@@ -5,6 +5,7 @@
     <title>Дипломный проект - Главная</title>
     <meta name="description" content="Дипломная работа для итомо">
     <meta name="keywords" content="Дипломная работа, итомо, проект, git, html, php">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -31,6 +32,77 @@
     <em>Жду не дождусь момента, когда мы подключим css))</em>
 
 </div>
+
+
+<form name="login" action="#">
+
+    <fieldset>
+        <legend>Форма авторизации</legend>
+            <label for="login">
+                <input id="login" autofocus required placeholder="Введите Ваш логин" type="text"></label>
+                <label for="passw">
+                    <input id="passw" required placeholder="Введите Ваш логин" type="password"></label>
+                <button type="submit">Войти</button>
+    </fieldset>
+
+
+</form>
+
+
+
+
+
+<form name="register" action="#">
+
+    <fieldset>
+        <legend>Форма регистрации</legend>
+        <div>
+        <label for="login">
+            <input id="login"  required placeholder="Введите Ваш логин" type="text"></label>
+        </div>
+        <br>
+        <div>
+            <label for="mail">
+                <input id="mail" name="mail"  required placeholder="Введите Вашу почту" type="email"></label>
+        </div>
+
+<br>
+        <div>
+        <label for="passw">
+            <input id="passw" name="passw" required placeholder="Введите Ваш логин" type="password"></label>
+        </div>
+
+        <br>
+        <div>
+            <label for="passw2">
+                <input id="passw2" name="passw2" required placeholder="Повторите пароль" type="password"></label>
+        </div><br>
+        <button type="submit">Зарегистрироваться</button>
+    </fieldset>
+
+
+</form>
+
+
+
+
+<form name="passfog" action="#">
+
+    <fieldset>
+        <legend>Форма восстановления пароля</legend>
+        <div>
+            <label for="mail">
+                <input id="mail" name="mail"  placeholder="Введите Вашу почту" type="email"></label>
+        </div><br>
+        <button type="submit">Восстановить пароль</button>
+    </fieldset>
+
+
+</form>
+
+<br>
+
+<p>Еще несколько форм я разместил на странице <a href="page.html">Пример</p>
 
 </body>
 </html>

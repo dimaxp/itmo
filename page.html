@@ -5,6 +5,7 @@
     <title>Дипломный проект - Пример</title>
     <meta name="description" content="На этой странице содержится пример страницы проекта">
     <meta name="keywords" content="Дипломная работа, пример, итомо, проект, git, html, php">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -45,6 +46,65 @@
 
 
     </table>
+
+
+
+
+</div>
+
+
+
+
+<div id="forms" class="forms" action="#">
+
+    <form name="add_zadacha" action="#">
+
+        <fieldset>
+            <legend>Форма форма для добавления задачи</legend>
+            <div>
+                <label for="zadacha">
+                    <input id="zadacha" autofocus autocomplete="off" name="zadacha"  placeholder="Введите задачу" type="text"></label>
+            </div>
+
+            <div>
+                <label for="vag">
+                    <input id="vag" autocomplete="off" name="vag"  type="checkbox">Важная задача</label>
+            </div>
+
+            <button type="submit">Добавить задачу</button>
+        </fieldset>
+
+
+    </form>
+
+
+
+    <form name="add_zametka" action="#">
+
+        <fieldset>
+            <legend>Форма для добавления заметки</legend>
+            <div>
+                <label for="zametka_name">
+                    <textarea name="zametka_name" id="zametka_name" placeholder="Введите Вашу заметку"></textarea>
+
+            </div>
+            <br>
+
+            <div><select name="grupp" id="sgroup">
+                <option value="gr1">Допустим группа 1</option>
+                <option value="gr2" selected>Допустим группа 2</option>
+                <option value="gr3">Допустим группа 3</option>
+                <option value="gr4">Допустим группа 4</option>
+            </select></div>
+            <br>
+
+            <button type="submit">Добавить заметку</button>
+        </fieldset>
+
+
+    </form>
+
+
 
 
 
