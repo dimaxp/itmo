@@ -6,6 +6,7 @@
     <meta name="description" content="На этой странице содержится пример страницы проекта">
     <meta name="keywords" content="Дипломная работа, пример, итомо, проект, git, html, php">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/f1830abe11.js"></script>
 </head>
 <body>
 <div class="container">
@@ -25,57 +26,53 @@
 <div class="content">
     <h1>Пример страницы</h1>
     <br>
-    <p>На этой странице вроде как должен быть пример страницы проекта, но без средств css это сделать проблемматично
+    <p>На этой странице я сегодня разместил форму добавления цели с примером самой цели и форму добавления заметки с самой заметкой. До следующего занятия я не трогаю расположение элементов.
         <br>
     </p>
-    <br>
-    Тогда тут просто пока оставлю эту табличку:
-    <br>    <br>
-    <table cellpadding="1" border="1">
-        <caption>Просто таблица</caption>
-        <tr>
-
-            <th>Заголовок 1</th>
-            <th>Заголовок 2</th>
-        </tr>
-
-        <tr>
-            <td>Содержание 1</td>
-            <td>Содержание 2</td>
-        </tr>
-
-
-    </table>
 
 
 
 
 </div>
+<br>     <br>
+
+<form name="add_zadacha" action="#">
+
+    <fieldset>
+        <legend>Форма форма для добавления задачи</legend>
+        <div>
+            <label for="zadacha">
+                <input id="zadacha" autofocus autocomplete="off" name="zadacha"  placeholder="Введите задачу" type="text"></label>
+        </div>
+
+        <div>
+            <label for="vag">
+                <input id="vag" autocomplete="off" name="vag"  type="checkbox">Важная задача</label>
+        </div>
+
+        <button type="submit">Добавить задачу</button>
+    </fieldset>
+
+
+</form>
+
+<br>     <br>
+<div class="zadacha">
+    <div class="data">31.07.2018</div>
+    <div id="zadacha_one">Тут содержание задачи</div>
+    <div class="gotovo">
+<i class="fa fa-check-circle" aria-hidden="true"></i>
+</div>
+</div>
+
+
 
 
 
 
 <div id="forms" class="forms" action="#">
 
-    <form name="add_zadacha" action="#">
 
-        <fieldset>
-            <legend>Форма форма для добавления задачи</legend>
-            <div>
-                <label for="zadacha">
-                    <input id="zadacha" autofocus autocomplete="off" name="zadacha"  placeholder="Введите задачу" type="text"></label>
-            </div>
-
-            <div>
-                <label for="vag">
-                    <input id="vag" autocomplete="off" name="vag"  type="checkbox">Важная задача</label>
-            </div>
-
-            <button type="submit">Добавить задачу</button>
-        </fieldset>
-
-
-    </form>
 
 
 
