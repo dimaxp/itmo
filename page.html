@@ -42,7 +42,7 @@
         <legend>Форма форма для добавления задачи</legend>
         <div>
             <label for="zadacha">
-                <input id="zadacha" autofocus autocomplete="off" name="zadacha"  placeholder="Введите задачу" type="text"></label>
+                <input id="zadacha" autofocus autocomplete="off" name="zadacha" maxlength="200" minlength="1" required  placeholder="Введите задачу" type="text"></label>
         </div>
 
         <div>
@@ -82,7 +82,7 @@
             <legend>Форма для добавления заметки</legend>
             <div>
                 <label for="zametka_name">
-                    <textarea name="zametka_name" id="zametka_name" placeholder="Введите Вашу заметку"></textarea>
+                    <textarea name="zametka_name" id="zametka_name" placeholder="Введите Вашу заметку" minlength="1" maxlength="2000" required></textarea>
 
             </div>
             <br>
