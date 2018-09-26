@@ -10,53 +10,107 @@
 </head>
 <body>
 <div class="container">
-    <div class="shapka">
-        <img class="logo" width="100" src="images/logo.png">
+
+    <div class="row">
+    <div class="col-2 offset-1 shapka">
+        <img class="logo" width="100" src="images/logo.png"> </div>
         <!--Знаю о том, что изображение лучше сделать по размеру, но пока не установил фотошоп-->
-        <nav>
+        <nav class="col-6">
             <ul class="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О проекте</a></li>
                 <li><a href="page.html">Пример</a></li>
+                <li><a href="page.html">ТЕСТ1</a></li>
+                <li><a href="page.html">Выпадающее меню</a>
+                    <ul>
+                        <li><a href="#">Выпадающее 1</a></li>
+                        <li><a href="#">Выпадающее 2</a></li>
+                        <li><a href="#">Выпадающее 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+
+        <div class="col-3">
+            <a href="#popvhod" class="knopka mygren">Вход</a>
+            <a href="#popreg" class="knopka myred">Регистрация</a>
+        </div>
+
+
     </div>
+
+
 </div>
 
-<div class="content">
+
+<div class="row">
+<div class="col-6 offset-3 content">
     <h1>Главная страница дипломного проекта ИТМО</h1>
     <br>
     <p>Это главная страница моего дипломного проекта для <strong>ИТМО.</strong></p>
-    <br>
-    <p>Более подробно о моем проекте вы можете узнать на странице <a href="about.html">О проекте</a></p>
-    <br>
-    <em>Жду не дождусь момента, когда мы подключим css))</em>
 
+    <p>Более подробно о моем проекте вы можете узнать на странице <a href="about.html">О проекте</a></p>
+
+
+    <p>Еще несколько форм я разместил на странице <a href="page.html">Пример</a></p>
+
+</div>
 </div>
 
 
+    <div class="row">
+<div class="col-6 offset-3 content">
+    <h2>Последние новости проекта:</h2>
+
+    <ol>
+    <li>Главная страница отверстана сеткой</li>
+    <li>К кнопкам вход и регистрация навешаны выпадающие окна</li>
+    <li>В меню добавлено подменю</li>
+    </ol>
+</div>
+    </div>
+
+
+
+
+
+
+
+<div id="popvhod" class="popvhod">
+
+
+    <a href="#" class="close"><i class="fa fa-times close" aria-hidden="true"></i></a>
+    <div class="clear"></div>
 <form name="login" action="#">
 
-    <fieldset>
-        <legend>Форма авторизации</legend>
+
+    <div>
             <label for="login">
                 <input id="login" autofocus required placeholder="Введите Ваш логин" type="text"></label>
+    </div>
+    <br>
+    <div>
                 <label for="passw">
                     <input id="passw" required placeholder="Введите Ваш логин" type="password"></label>
+    </div>
+    <br>
                 <button type="submit">Войти</button>
-    </fieldset>
+
 
 
 </form>
+</div>
 
 
 
 
-
+<div id="popreg" class="popreg">
+    <a href="#" class="close"><i class="fa fa-times close" aria-hidden="true"></i></a>
+    <div class="clear"></div>
 <form name="register" action="#">
 
-    <fieldset>
-        <legend>Форма регистрации</legend>
+
+
         <div>
         <label for="login_reg">
             <input id="login_reg" name="login_reg"  required placeholder="Введите Ваш логин" type="text"></label>
@@ -79,14 +133,14 @@
                 <input id="passw_reg" name="passw_reg" required placeholder="Повторите пароль" type="password"></label>
         </div><br>
         <button type="submit">Зарегистрироваться</button>
-    </fieldset>
+
 
 
 </form>
+</div>
 
 
-
-
+<!--
 <form name="passfog" action="#">
 
     <fieldset>
@@ -100,10 +154,8 @@
 
 
 </form>
+-->
 
-<br>
-
-<p>Еще несколько форм я разместил на странице <a href="page.html">Пример</p>
 
 </body>
 </html>
