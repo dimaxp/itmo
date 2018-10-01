@@ -5,101 +5,143 @@
     <title>Дипломный проект - Пример</title>
     <meta name="description" content="На этой странице содержится пример страницы проекта">
     <meta name="keywords" content="Дипломная работа, пример, итомо, проект, git, html, php">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/f1830abe11.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="shapka">
-        <img class="logo" width="100" src="images/logo.png">
+<div class="container-fluid">
+    <div class="row verhpage">
+<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12"><img class="rounded mx-auto d-block logo" alt="logo" src="images/logo.png"></div>
+
         <!--Знаю о том, что изображение лучше сделать по размеру, но пока не установил фотошоп-->
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О проекте</a></li>
-                <li><a href="page.html">Пример</a></li>
+        <nav class="col-xl-10 col-lg-10 col-md-10 col-sm-12 text-right">
+            <ul class="vnmenu">
+                <li><a class="btn btn-success" href="about.html">Выход</a></li>
+                <li><a class="btn btn-secondary" href="index.html">Настройки</a></li>
+
             </ul>
         </nav>
     </div>
+
+
+<div class="row">
+
+<!--начало левого большого блока-->
+<div class="left col-xl-5 col-lg-5 col-md-8 col-12  offset-lg-1 offset-md-2">
+
+
+<form class="" name="add_zadacha" action="#">
+<div class="form-group row">
+<input class="col-xl-8 col-lg-8 col-md-8 col-12 " id="zadacha" autofocus autocomplete="off" name="zadacha" maxlength="200" minlength="1" required  placeholder="Введите задачу" type="text"></label>
+<button class="offset-md-1 col-xl-3 col-lg-3 col-md-3  col-12  btn btn-success" type="submit">Добавить задачу</button>
 </div>
-
-<div class="content">
-    <h1>Пример страницы</h1>
-    <br>
-    <p>На этой странице я сегодня разместил форму добавления цели с примером самой цели и форму добавления заметки с самой заметкой. До следующего занятия я не трогаю расположение элементов.
-        <br>
-    </p>
-
-
-
-
-</div>
-<br>     <br>
-
-<form name="add_zadacha" action="#">
-
-    <fieldset>
-        <legend>Форма форма для добавления задачи</legend>
-        <div>
-            <label for="zadacha">
-                <input id="zadacha" autofocus autocomplete="off" name="zadacha" maxlength="200" minlength="1" required  placeholder="Введите задачу" type="text"></label>
-        </div>
-
-        <div>
-            <label for="vag">
-                <input id="vag" autocomplete="off" name="vag"  type="checkbox">Важная задача</label>
-        </div>
-
-        <button type="submit">Добавить задачу</button>
-    </fieldset>
-
-
 </form>
 
-<br>     <br>
-<div class="zadacha">
-    <div class="data">31.07.2018</div>
-    <div id="zadacha_one">Тут содержание задачи</div>
-    <div class="gotovo">
-<i class="fa fa-check-circle" aria-hidden="true"></i>
+
+
+<div class="row zadacha">
+<div class="data col-xl-2 col-lg-2 col-md-2 col-3">31.07.2018</div>
+<div class="zadacha_one col-xl-8 col-lg-8 col-md-8 col-7">Тут содержание задачи</div>
+<div class="gotovo col-xl-2 col-lg-2 col-md-2 col-2 text-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+</div>
+
+
+
+    <div class="row zadacha">
+        <div class="data col-xl-2 col-lg-2 col-md-2 col-3">31.07.2018</div>
+        <div class="zadacha_one col-xl-8 col-lg-8 col-md-8 col-7">Тут содержание задачи</div>
+        <div class="gotovo col-xl-2 col-lg-2 col-md-2 col-2 text-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+    </div>
+
+
+
+    <div class="row zadacha">
+        <div class="data col-xl-2 col-lg-2 col-md-2 col-3">31.07.2018</div>
+        <div class="zadacha_one col-xl-8 col-lg-8 col-md-8 col-7">Тут содержание задачи</div>
+        <div class="gotovo col-xl-2 col-lg-2 col-md-2 col-2 text-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+    </div>
+
+
+
+
+    <div class="row zadacha">
+        <div class="data col-xl-2 col-lg-2 col-md-2 col-3">31.07.2018</div>
+        <div class="zadacha_one col-xl-8 col-lg-8 col-md-8 col-7">Тут содержание задачи</div>
+        <div class="gotovo col-xl-2 col-lg-2 col-md-2 col-2 text-right"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+    </div>
+
+</div>
+<!--конец левого большого блока-->
+
+
+
+
+<!--начало правого большого блока-->
+<div class="right col-xl-4 col-lg-4 col-md-8 offset-xl-2 offset-md-2 offset-lg-1">
+<form name="add_zametka" action="#">
+<div class="form-group row justify-content-center text-center">
+<legend>Форма для добавления заметки</legend>
+    <br><br>
+<textarea class="col-xl-10 col-lg-10 col-md-10"  name="zametka_name" id="zametka_name" placeholder="Введите Вашу заметку" minlength="1" maxlength="2000" required></textarea>
+</div>
+    <div class="form-group row justify-content-center">
+<button class="btn btn-success" type="submit">Добавить заметку</button>
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+<div class="row justify-content-center">
+<div class="col-xl-10 col-lg-10 col-md-10 block_zapis_zametki">
+    <div class="delet_zametka text-right"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <p>Пример заметки</p>
 </div>
 </div>
 
 
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-10 col-md-10 block_zapis_zametki">
+            <div class="delet_zametka text-right"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <p>Пример заметки</p>
+        </div>
+    </div>
+
+
+
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-10 col-md-10 block_zapis_zametki">
+            <div class="delet_zametka text-right"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <p>Пример заметки</p>
+        </div>
+    </div>
 
 
 
 
-<div id="forms" class="forms" action="#">
+
+</div>
+    <!--конец правого большого блока-->
 
 
 
 
 
-    <form name="add_zametka" action="#">
-
-        <fieldset>
-            <legend>Форма для добавления заметки</legend>
-            <div>
-                <label for="zametka_name">
-                    <textarea name="zametka_name" id="zametka_name" placeholder="Введите Вашу заметку" minlength="1" maxlength="2000" required></textarea>
-
-            </div>
-            <br>
-
-            <div><select name="grupp" id="sgroup">
-                <option value="gr1">Допустим группа 1</option>
-                <option value="gr2" selected>Допустим группа 2</option>
-                <option value="gr3">Допустим группа 3</option>
-                <option value="gr4">Допустим группа 4</option>
-            </select></div>
-            <br>
-
-            <button type="submit">Добавить заметку</button>
-        </fieldset>
 
 
-    </form>
+
+
+
+
+
+
 
 
 
@@ -108,5 +150,6 @@
 
 </div>
 
+</div>
 </body>
 </html>

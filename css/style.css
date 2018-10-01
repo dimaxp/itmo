@@ -1,58 +1,65 @@
-@import url(grid.css);
-body {font-family: Verdana; font-size: 13px; line-height: 20px; background-image: url("../images/bg.png")}
+@import url(normalize.css);
+body {font-family: Verdana; font-size: 0.8em; line-height: 20px; background-image: url("../images/bg.png")}
 nav {position: relative;}
-ul li {list-style-type: none; float:left; margin-right: 30px;}
-ul li > ul {display: none;width: 140px;
-    background: #fff;
-    overflow: hidden; position: absolute;     margin-left: -20px;}
-
-ul li:hover > ul {display: block;  }
-ul li ul li {margin-right: 10px; display: block; margin-bottom: 10px; margin-top: 10px; }
-ul li ul li a:hover {text-decoration: underline;}
+ul li {list-style-type: none;}
+ul.menu li {list-style-type: none; float:left; margin-right: 30px;}
+ul.menu li > ul {display: none;width: 140px;background: #fff;overflow: hidden; position: absolute;     margin-left: -20px;}
+ul.menu li:hover > ul {display: block;  }
+ul.menu li ul li {margin-right: 10px; display: block; margin-bottom: 10px; margin-top: 10px; }
+ul.menu li ul li a:hover {text-decoration: underline;}
 a {text-decoration: none; color: #1fa950;}
-input {width: 200px;  border: 1px solid #000; text-indent: 10px; padding: 10px; border-radius: 3px;}
+input { border: 1px solid #000;  padding: 10px; border-radius: 3px;}
 input:hover {background: #f8f3f3;}
 input:focus {background: #e8ebe5;}
-button {color: #ffffff; background: #7db83f; border: none; width: 221px; height: 38px; border-radius: 3px; padding: 10px; cursor: pointer; }
+button {font-size: 0.5em; word-wrap: break-word; color: #ffffff; background: #7db83f; border: none;  border-radius: 3px; padding: 10px; cursor: pointer; }
 button:hover {background: #599855;}
-.zadacha{width: 500px;min-height: 60px;background: #fff;border: 1px solid #DDD;overflow: hidden;margin-bottom: 10px; border-radius: 5px;}
-.gotovo {width: 60px; color:#599855; height: 60px; line-height: 40px; cursor: pointer;    font-size: 45px; }
-#zadacha {width: 400px; border-radius: 0px; border-top:0px;     border-bottom: 2px solid #72ce61; border-left:0px; border-right: 0px;}
-#zametka_name {width: 400px; min-height: 100px; border-radius: 3px; border: 1px solid #000; padding: 10px;}
+
+#zadacha {border-radius: 0px; border-top:0px;     border-bottom: 2px solid #72ce61; border-left:0px; border-right: 0px;}
+#zametka_name {width:100%; min-height: 100px; border-radius: 3px; border: 1px solid #76cf65; padding: 10px;}
 #sgroup {width: 400px;padding: 10px; border: 1px solid #5b9f5a;}
 .menu {margin-top: 40px;}
-
-
 .popvhod {display: none; position: fixed; top:30px; margin-left: -200px; left:50%; width: 400px; background: #fff; border: 1px solid #000; padding: 20px;}
 .popvhod:target {display: block;}
-
-
 .popreg {display: none; position: fixed; top:30px; margin-left: -200px; left:50%; width: 400px; background: #fff; border: 1px solid #000; padding: 20px;}
 .popreg:target {display: block;}
-
 .close {float: right; font-size: 22px;}
 .close:hover {color:#000;}
-.knopka
-{width: 110px;
-float: right;
-display: block;
-border: 1px solid;
-margin: 10px;
-    margin-top: 30px;
-text-align: center;
-height: 35px;
-line-height: 35px;
-font-size: 12px;
-border-radius: 5px; color:#fff;}
-
-.mygren {    background: #599855;
-    border-color: #4e904a;}
-
+.knopka {width: 110px;float: right;display: block;border: 1px solid;margin: 10px;margin-top: 30px;text-align: center;height: 35px;line-height: 35px;font-size: 12px;border-radius: 5px; color:#fff;}
+.mygren {    background: #599855;border-color: #4e904a;}
 .mygren:hover {background:#75c070}
-
-.myred{    background: #b7182e;
-    border-color: #e73e55;}
-
+.myred{    background: #b7182e;border-color: #e73e55;}
 .myred:hover {background:#e73e55}
-
 .content {background: #fff; padding: 20px; border-radius: 5px; margin-bottom: 20px;}
+
+
+.zadacha{margin-top:1.5em; line-height: 4em; background: #fff;border: 1px solid #DDD;overflow: hidden;margin-bottom: 10px; border-radius: 5px;}
+.gotovo {color:#599855; cursor: pointer;    font-size: 3em; }
+
+.block_zapis_zametki {background: #FFF;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #ECE8E8;
+    border-radius: 5px; margin-top:1.5em;
+}
+.verhpage {height:10em; margin-top: 2em;}
+
+.data {color:#ad9c9c}
+
+.delet_zametka i {
+    cursor: pointer;
+    margin-top: 15px;
+    color: #599855;
+}
+
+
+
+
+legend {color:#599855;}
+
+ul.vnmenu {margin-top: 20px;}
+ul.vnmenu li {float:right; margin-left: 20px;}
+
+
+:focus {
+    outline: none;
+}
+
