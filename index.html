@@ -6,17 +6,18 @@
     <meta name="description" content="Дипломная работа для итомо">
     <meta name="keywords" content="Дипломная работа, итомо, проект, git, html, php">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/f1830abe11.js"></script>
 </head>
-<body>
+<body class="in">
 <div class="container">
 
-    <div class="row">
-    <div class="col-2 offset-1 shapka">
-        <img class="logo" width="100" src="images/logo.png"> </div>
+    <div class="row verhindex">
+    <div class="col-md-2 col-12 shapka">
+        <img class="logo" src="images/logo.png"> </div>
         <!--Знаю о том, что изображение лучше сделать по размеру, но пока не установил фотошоп-->
-        <nav class="col-6">
+        <nav class="col-md-6 col-12">
             <ul class="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О проекте</a></li>
@@ -32,20 +33,20 @@
             </ul>
         </nav>
 
-        <div class="col-3">
-            <a href="#popvhod" class="knopka mygren">Вход</a>
-            <a href="#popreg" class="knopka myred">Регистрация</a>
+        <div class="col-md-3 col-12 text-right">
+            <a href="#popvhod" class="knopka btn btn-success">Вход</a>
+            <a href="#popreg" class="knopka btn btn-warning">Регистрация</a>
         </div>
 
 
     </div>
 
 
-</div>
+
 
 
 <div class="row">
-<div class="col-6 offset-3 content">
+<div class="col-md-9 col-10 offset-1 content">
     <h1>Главная страница дипломного проекта ИТМО</h1>
     <br>
     <p>Это главная страница моего дипломного проекта для <strong>ИТМО.</strong></p>
@@ -60,13 +61,14 @@
 
 
     <div class="row">
-<div class="col-6 offset-3 content">
+<div class="col-md-9 col-10 offset-1 content">
     <h2>Последние новости проекта:</h2>
 
     <ol>
     <li>Главная страница отверстана сеткой</li>
     <li>К кнопкам вход и регистрация навешаны выпадающие окна</li>
     <li>В меню добавлено подменю</li>
+        <li>Я попытался отверстать страницы сразу на bootstrap 4. Во время верстки у меня возникло несколько вопросов)</li>
     </ol>
 </div>
     </div>
@@ -74,10 +76,10 @@
 
 
 
+</div>
 
 
-
-<div id="popvhod" class="popvhod">
+<div id="popvhod" class="popvhod col-md-3 col-12">
 
 
     <a href="#" class="close"><i class="fa fa-times close" aria-hidden="true"></i></a>
@@ -95,7 +97,7 @@
                     <input id="passw" required placeholder="Введите Ваш логин" type="password"></label>
     </div>
     <br>
-                <button type="submit">Войти</button>
+                <button class="btn btn-success" type="submit">Войти</button>
 
 
 
@@ -105,7 +107,7 @@
 
 
 
-<div id="popreg" class="popreg">
+<div id="popreg" class="popreg col-md-3 col-12">
     <a href="#" class="close"><i class="fa fa-times close" aria-hidden="true"></i></a>
     <div class="clear"></div>
 <form name="register" action="#">
@@ -133,7 +135,7 @@
             <label for="passw_reg">
                 <input id="passw_reg" name="passw_reg" required placeholder="Повторите пароль" type="password"></label>
         </div><br>
-        <button type="submit">Зарегистрироваться</button>
+        <button class="btn btn-success" type="submit">Зарегистрироваться</button>
 
 
 

@@ -6,25 +6,43 @@
     <meta name="description" content="На этой странице содержится информация о дипломном проекте">
     <meta name="keywords" content="Дипломная работа, о проекте, итомо, проект, git, html, php">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/f1830abe11.js"></script>
 </head>
-<body>
+<body class="in">
 <div class="container">
-    <div class="shapka">
-        <img class="logo" width="100" src="images/logo.png">
+    <div class="row verhindex">
+        <div class="col-md-2 col-12 shapka">
+            <img class="logo" src="images/logo.png"> </div>
         <!--Знаю о том, что изображение лучше сделать по размеру, но пока не установил фотошоп-->
-        <nav>
+        <nav class="col-md-6 col-12">
             <ul class="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="about.html">О проекте</a></li>
                 <li><a href="page.html">Пример</a></li>
+                <li><a href="page.html">ТЕСТ1</a></li>
+                <li><a href="page.html">Выпадающее меню</a>
+                    <ul>
+                        <li><a href="#">Выпадающее 1</a></li>
+                        <li><a href="#">Выпадающее 2</a></li>
+                        <li><a href="#">Выпадающее 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-    </div>
-</div>
 
-<div class="content">
+        <div class="col-md-3 col-12 text-right">
+            <a href="#popvhod" class="knopka btn btn-success">Вход</a>
+            <a href="#popreg" class="knopka btn btn-warning">Регистрация</a>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-9 col-10 offset-1 content">
     <h1>О проекте</h1>
     <br>
     <p>Моим дипломным проектом будет онлайн органайзер, включающий в себя: список задач, заметки и пр.
@@ -37,7 +55,7 @@
 
 
 
-</div>
+</div></div></div>
 
 </body>
 </html>
