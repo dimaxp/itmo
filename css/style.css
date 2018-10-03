@@ -12,11 +12,11 @@ a {text-decoration: none; color: #1fa950;}
 input { border: 1px solid #000;  padding: 10px; border-radius: 3px;}
 input:hover {background: #f8f3f3;}
 input:focus {background: #e8ebe5;}
-button {font-size: 0.5em; word-wrap: break-word; color: #ffffff; background: #7db83f; border: none;  border-radius: 3px; padding: 10px; cursor: pointer; }
+button {font-size: 0.5em; word-wrap: break-word; color: #ffffff; background: #464d53; border: none;  border-radius: 3px; padding: 10px; cursor: pointer; }
 button:hover {background: #599855;}
 .verhindex {margin-top: 20px; margin-bottom: 40px;}
-#zadacha {border-radius: 0px; border-top:0px;     border-bottom: 2px solid #72ce61; border-left:0px; border-right: 0px;}
-#zametka_name {width:100%; min-height: 100px; border-radius: 3px; border: 1px solid #76cf65; padding: 10px;}
+#zadacha {border-radius: 0px; border-top:0px;     border-bottom: 2px solid #464d53; border-left:0px; border-right: 0px;}
+#zametka_name {width:100%; min-height: 100px; border-radius: 3px; border: 1px solid #464d53; padding: 10px;}
 #sgroup {width: 400px;padding: 10px; border: 1px solid #5b9f5a;}
 .menu {margin-top: 40px;}
 .popvhod {display: none; position: fixed; top:30px;   background: #fff; border: 1px solid #000; padding: 20px;}
@@ -32,9 +32,9 @@ button:hover {background: #599855;}
 .myred:hover {background:#e73e55}
 .content {background: #fff; padding: 20px; border-radius: 5px; margin-bottom: 20px;}
 .zadacha{margin-top:1.5em; line-height: 4em; background: #fff;border: 1px solid #DDD;overflow: hidden;margin-bottom: 10px; border-radius: 5px;}
-.gotovo {color:#599855; cursor: pointer;    font-size: 3em; }
+.gotovo {color:#464d53; cursor: pointer;    font-size: 3em; }
 .block_zapis_zametki {background: #FFF;padding: 0 20px 20px 20px;border: 1px solid #ECE8E8;border-radius: 5px; margin-top:1.5em;}
-.verhpage {height:10em; margin-top: 2em;}
+.verhpage {height:8em; margin-top: 2em;}
 .data {color:#ad9c9c}
 .delet_zametka i {cursor: pointer;margin-top: 15px;color: #599855;}
 legend {color:#599855;}
@@ -42,6 +42,9 @@ ul.vnmenu {margin-top: 20px;}
 ul.vnmenu li {float:right; margin-left: 20px;}
 :focus {outline: none;}
 
+
+.razdeli {min-height: 90px; background:#7c848a; margin-bottom: 40px;}
+.ibig {font-size: 4em; color: #fff; margin-top: 0.4em; cursor: pointer;}
 @media screen and (min-width:768px){
 .popvhod {margin-left: -200px; left:50%; }
 .popreg {margin-left: -200px; left:50%;}
