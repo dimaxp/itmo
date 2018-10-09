@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row verhpage">
+<div class="row verhpage">
 <div class="col-md-2 col-sm-12"><img class="rounded mx-auto d-block" alt="logo" src="images/logo.png"></div>
 
         <!--Знаю о том, что изображение лучше сделать по размеру, но пока не установил фотошоп-->
@@ -35,9 +35,9 @@
 
         <div class="col-10">
             <div class="row">
-        <div class="col-1 text-center"><i class="ibig fas fa-briefcase"></i></div>
-        <div class="col-1 text-center"><i class="ibig fas fa-bell"></i></div>
-                <div class="col-1 text-center"> <i class="ibig fas fa-book-open"></i></div>
+        <div class="offset-md-1 col-1 text-center"><i class="ibig fas fa-briefcase"></i><span class="krug">5</span></div>
+        <div class="col-1 text-center"><i class="ibig fas fa-bell"></i><span class="krug">11</span></div>
+                <div class="col-1 text-center"> <i class="ibig fas fa-book-open"></i><span class="krug">12</span></div>
 
 
             </div>
@@ -53,9 +53,16 @@
 
 
 <form class="" name="add_zadacha" action="#">
-<div class="form-group row">
-<input class="col-md-8 col-12 " id="zadacha" autofocus autocomplete="off" name="zadacha" maxlength="200" minlength="1" required  placeholder="Введите задачу" type="text"></label>
-<button class="offset-md-1 col-md-3  col-12  btn btn-success" type="submit">Добавить задачу</button>
+<div class="row">
+
+    <div class="col-md-8 col-12 paddnone">
+<input class="" id="zadacha" autofocus autocomplete="off" name="zadacha" maxlength="200" minlength="1" required  placeholder="Введите задачу" type="text"></label>
+    </div>
+
+<div class="offset-md-1 col-md-3  col-12 divknop paddnone">
+    <button class="btn btn-success gozadacha" type="submit">Добавить</button>
+</div>
+
 </div>
 </form>
 
@@ -96,6 +103,7 @@
 
 
 <!--начало правого большого блока-->
+
 <div class="right col-lg-4 col-md-8 offset-xl-2 offset-md-2 offset-lg-1">
 <form name="add_zametka" action="#">
 <div class="form-group row justify-content-center text-center">
@@ -145,6 +153,8 @@
 
 
 </div>
+
+
     <!--конец правого большого блока-->
 
 
